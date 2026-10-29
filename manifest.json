@@ -1,0 +1,16 @@
+{
+  "name": "Diomande Shoes",
+  "short_name": "DiomandeShoes",
+  "description": "Vente de chaussures - Yopougon Selmer - Toutes pointures",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1785/1785348.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
