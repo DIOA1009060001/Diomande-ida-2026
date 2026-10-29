@@ -1,0 +1,33 @@
+print("=== DIOMANDE SHOES - ABIDJAN ===")
+print("Vente en gros et détail - Yopougon Selmer\n")
+
+chaussures = [
+    {"nom": "Air Max 270", "taille": "Toutes pointures (40-45)", "prix": 25000},
+    {"nom": "Jordan 4 Retro", "taille": "Toutes pointures (40-45)", "prix": 35000},
+    {"nom": "Nike Dunk Low", "taille": "Toutes pointures (40-45)", "prix": 22000},
+    {"nom": "New Balance 550", "taille": "Toutes pointures (40-45)", "prix": 28000},
+    {"nom": "Adidas Yeezy", "taille": "Toutes pointures (40-45)", "prix": 30000},
+    {"nom": "Toutes marques sur commande", "taille": "Toutes pointures", "prix": 0},
+]
+
+print("Stock disponible à Yopougon Selmer :")
+for i, c in enumerate(chaussures, 1):
+    if c['prix'] > 0:
+        print(f"{i}. {c['nom']} - {c['taille']} - {c['prix']} FCFA")
+    else:
+        print(f"{i}. {c['nom']} - {c['taille']}")
+
+choix = input("\nQuelle chaussure veux-tu ? (1/2/3/4/5/6) : ")
+
+if choix.isdigit() and 1 <= int(choix) <= len(chaussures):
+    client = chaussures[int(choix)-1]
+    print(f"\nCommande : {client['nom']}")
+    if client['prix'] > 0:
+        print(f"Prix : {client['prix']} FCFA")
+    print("Paiement : Wave / Orange Money / MTN")
+    print("Livraison : Yopougon 1000F, Abidjan 2000F, Gagnoa sur commande")
+    print("Contact WhatsApp : 05 64 36 95 43")
+    print("Merci chez Diomande Shoes !")
+else:
+    print("Choix invalide, relance le programme.")
+
