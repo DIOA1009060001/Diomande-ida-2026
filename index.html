@@ -3,56 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DIOMANDE SHOES</title>
-<link rel="manifest" href="manifest.json">
+<title>DIOMANDE SHOES - Yopougon Selmer</title>
 <style>
-body{font-family:Arial;background:#f5f5f5;margin:0;padding:10px}
-h1{text-align:center;background:#000;color:#fff;padding:15px;border-radius:10px;font-size:22px}
-.card{background:#fff;padding:15px;margin:12px 0;border-radius:10px;box-shadow:0 2px 4px #ccc}
-button{background:#25D366;color:#fff;border:none;padding:13px;width:100%;border-radius:8px;font-size:16px;font-weight:bold}
-.price{color:green;font-weight:bold;font-size:18px}
+body{font-family:Arial;margin:0;background:#f5f5f5}
+header{background:#111;color:white;padding:18px;text-align:center;position:sticky;top:0}
+header h1{margin:0;font-size:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.card img{width:100%;height:180px;object-fit:cover}
+.info{padding:10px}
+.info h3{font-size:13px;margin:0 0 5px;height:34px}
+.price{font-size:16px;font-weight:bold;color:#e60000;margin:4px 0}
+.size{font-size:11px;color:#777}
+.btn{display:block;text-align:center;background:#25D366;color:white;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:6px}
 </style>
 </head>
 <body>
-<h1>DIOMANDE SHOES<br><small style="font-size:13px">Yopougon Selmer - 05 64 36 95 43</small></h1>
+<header>
+<h1>👟 DIOMANDE SHOES</h1>
+<p>Yopougon Selmer - 05 64 36 95 43 - Livraison Abidjan</p>
+<p>Toutes les paires à 12.000F | Pointures 37-43</p>
+</header>
+<div class="grid">
 
 <div class="card">
-<h3>claquette original </h3>
-<p class="price">25 000 FCFA - Pointures 40-45</p>
-<button onclick="window.open('https://wa.me/2250564369543?text=Salut, je veux commander Air Max 270')">Commander WhatsApp</button>
+<img src="images/1.jpg">
+<div class="info">
+<h3>Adidas Predator Football Blanc</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20Predator%20Blanc%2012.000F">Commander WhatsApp</a>
 </div>
-
-<div class="card">
-<h3>Jordan 4 Retro</h3>
-<p class="price">35 000 FCFA - Pointures 40-45</p>
-<button onclick="window.open('https://wa.me/2250564369543?text=Salut, je veux commander Jordan 4 Retro')">Commander WhatsApp</button>
-</div>
-
-<div class="card">
-<h3>Nike Dunk Low</h3>
-<p class="price">22 000 FCFA - Pointures 40-45</p>
-<button onclick="window.open('https://wa.me/2250564369543?text=Salut, je veux commander Nike Dunk Low')">Commander WhatsApp</button>
 </div>
 
 <div class="card">
-<h3>New Balance 550</h3>
-<p class="price">28 000 FCFA - Pointures 40-45</p>
-<button onclick="window.open('https://wa.me/2250564369543?text=Salut, je veux commander New Balance 550')">Commander WhatsApp</button>
+<img src="images/2.jpg">
+<div class="info">
+<h3>Timberland Boots Noir/Jaune</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20Timberland%2012.000F">Commander WhatsApp</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Adidas Yeezy</h3>
-<p class="price">30 000 FCFA - Pointures 40-45</p>
-<button onclick="window.open('https://wa.me/2250564369543?text=Salut, je veux commander Adidas Yeezy')">Commander WhatsApp</button>
+<img src="images/3.jpg">
+<div class="info">
+<h3>Nike Air Max 95 Noir</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20Air%20Max%2095%2012.000F">Commander WhatsApp</a>
+</div>
 </div>
 
-<div style="text-align:center;padding:20px">
-<p><b>Livraison:</b> Yopougon 1000F / Abidjan 2000F</p>
-<p><b>Stock: Yopougon Selmer</b></p>
+<div class="card">
+<img src="images/4.jpg">
+<div class="info">
+<h3>Nike TN Blanc Pur</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20TN%20Blanc%2012.000F">Commander WhatsApp</a>
+</div>
 </div>
 
-<script>
-if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
-</script>
+<div class="card">
+<img src="images/5.jpg">
+<div class="info">
+<h3>Nike TN Blanc Orange Bleu</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20TN%20Color%2012.000F">Commander WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/6.jpg">
+<div class="info">
+<h3>Claquettes Adidas Bleu Nuit</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20Claquette%20Adidas%2012.000F">Commander WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/7.jpg">
+<div class="info">
+<h3>Vans Old Skool Mix Couleurs</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20Vans%20Mix%2012.000F">Commander WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/8.jpg">
+<div class="info">
+<h3>Vans Bandana Noir Blanc</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20Vans%20Bandana%2012.000F">Commander WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/9.jpg">
+<div class="info">
+<h3>STNA TOU Blanc</h3>
+<p class="size">37-43</p>
+<p class="price">12.000 F CFA</p>
+<a class="btn" href="https://wa.me/2250564369543?text=Salut%20DIOMANDE%20SHOES%20je%20veux%20STNA%20Blanc%2012.000F">Commander WhatsApp</a>
+</div>
+</div>
+
+</div>
 </body>
 </html>
