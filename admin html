@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ADMIN DIOMANDE</title>
+<style>body{background:#000;color:#fff;font-family:Arial;padding:16px}input,button{width:100%;padding:12px;margin:6px 0;border-radius:8px;border:none;font-size:14px}input{background:#222;color:#fff}button{background:#00ff88;color:#000;font-weight:bold}textarea{width:100%;height:200px;background:#111;color:#0f0;padding:10px;border-radius:8px}</style>
+</head>
+<body>
+<h2>🔐 ADMIN DIOMANDE - Code: 5643</h2>
+<div id="login"><input type="password" id="code" placeholder="Entre code"><button onclick="check()">Entrer</button></div>
+<div id="panel" style="display:none">
+<h3>Ajouter Prono du jour</h3>
+<input id="match" placeholder="Ex: Man City vs Arsenal">
+<input id="prono" placeholder="Ex: 2-1">
+<input id="cote" placeholder="Ex: 8.50">
+<input id="conf" placeholder="Ex: 95%">
+<button onclick="add()">Ajouter ce prono</button>
+<h3>JSON à copier dans pronos.json</h3>
+<textarea id="out"></textarea>
+<button onclick="copy()">Copier</button>
+<p style="font-size:11px;color:#888">Après copier, va dans pronos.json sur GitHub, colle et fais Commit</p>
+</div>
+<script>
+let data={};let today=new Date().toISOString().split('T')[0];
+function check(){if(document.getElementById('code').value=='5643'){document.getElementById('login').style.display='none';document.getElementById('panel').style.display='block';load();}else alert('Mauvais code');}
+async function load(){try{const r=await fetch('pronos.json');data=await r.json();}catch(e){data={}};if(!data[today]) data[today]=[];update();}
+function add(){const m=document.getElementById('match').value;const p=document.getElementById('prono').value;const c=document.getElementById('cote').value;const cf=document.getElementById('conf').value;if(!m||!p)return alert('Remplis match et prono');if(!data[today]) data[today]=[];data[today].push({match:m,prono:p,cote:c,confiance:cf});update();document.getElementById('match').value='';document.getElementById('prono').value='';}
+function update(){document.getElementById('out').value=JSON.stringify(data,null,2);}
+function copy(){navigator.clipboard.writeText(document.getElementById('out').value);alert('Copié ! Va coller dans pronos.json');}
+</script>
+</body>
+</html>
